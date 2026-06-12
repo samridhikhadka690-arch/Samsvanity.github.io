@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Sam's Vanity</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   
+    <!-- Header Navigation Section -->
+    <header>
+        <div class="header-1">
+            <a class="logo">Sam's Vanity</a>
+            <!-- Fixed and updated form search script connection -->
+            <form action="" class="search-box-container" onsubmit="event.preventDefault(); const val = document.getElementById('search-box').value; if(val) { window.location.href='pages/product.html?search=' + encodeURIComponent(val); }">
+                <input type="search" id="search-box" placeholder="Search cosmetics here...">
+            </form>
+        </div>
+        
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="pages/product.html">Product</a>
+                <a href="pages/contact.html">Contact</a>
+                <a href="pages/aboutus.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Aesthetic Hero Display Banner -->
+    <section class="home" id="home">
+        <div class="content">
+            <span>Premium & Clean Cosmetics</span>
+            <h3>Unveil Your <br><span>Radiance</span></h3>
+            <p>Experience the finest aesthetic collection curated carefully for your skin. Pure luxury, elegant textures, and highly pigmented formulas delivered straight to your vanity table.</p>
+            <a href="pages/product.html" class="btn">Shop Collection &rarr;</a>
+        </div>
+        
+        <!-- New Image Container Side Element -->
+        <div class="home-image">
+            <img src="https://i.pinimg.com/736x/5c/c1/a7/5cc1a74c845952f8e927179a950516e3.jpg" alt="Pinterest Coquette Aesthetic Layout">
+        </div>
+    </section>
+
+    <!-- Client Review Feature Grid with Updated Names -->
+    <section class="reviews">
+        <h3 class="heading-title">What Our Customers Say</h3>
+        <div class="review-container">
+            <table width="100%" cellpadding="20">
+                <tr align="center">
+                    <td>
+                        <b>Rubina Shrestha</b>
+                        <details>
+                            <summary>Read Review</summary>
+                            <p>“Sam's Vanity makes premium cosmetic matching so clean and effortless! The packaging looks gorgeous on my desktop shelf.”</p>
+                        </details>
+                    </td>
+                    <td></td>
+                    <td>
+                        <b>Samridhi Shah</b>
+                        <details>
+                            <summary>Read Review</summary>
+                            <p>“The website layout is highly user-friendly and the ordering process for high-end blush setups is flawless.”</p>
+                        </details>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="3" style="padding-top: 0;">
+                        <b>Aishworya Basnet</b>
+                        <details>
+                            <summary>Read Review</summary>
+                            <p>“The customer service and delivery inside Kathmandu were incredibly fast. The formulas feel so lightweight and luxury!”</p>
+                        </details>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer System Links -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a class="logo"><p>"Join us at Sam's Vanity for the finest high-end cosmetic additions at unbeatable value blocks."</p></a>
+            </div>
+            <div class="box">
+                <h3>Our Locations</h3>
+                <div class="links">
+                    <a href="#">Gaurighat</a>
+                    <a href="#">Baneshwor</a>
+                    <a href="#">Bhaktapur</a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <div class="links">
+                    <a href="index.html">Home</a>
+                    <a href="pages/product.html">Product</a>
+                    <a href="pages/contact.html">Contact</a>
+                    <a href="pages/aboutus.html">About Us</a>
+                </div>
+            </div>
+        </div>
+        <h1 class="credit">Created by <span>Samridhi Khadka</span></h1>
+    </section>
+
+    <footer>
+        <p align="center">© 2026 Sam's Vanity | Elevating Your Timeless Radiance</p> 
+    </footer>
+</body>
+</html>

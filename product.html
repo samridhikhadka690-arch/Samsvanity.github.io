@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Sam's Vanity</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+    <!-- Header Navigation Section with Integrated Search Bar -->
+    <header>
+        <div class="header-1">
+            <a href="../index.html" class="logo">Sam's Vanity</a>
+            <form action="" class="search-box-container" onsubmit="event.preventDefault(); filterProducts(document.getElementById('search-box').value);">
+                <input type="search" id="search-box" placeholder="Search cosmetics here...">
+            </form>
+        </div>
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="../index.html">Home</a>
+                <a href="product.html" class="active">Product</a>
+                <a href="contact.html">Contact</a>
+                <a href="aboutus.html">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Showcase Grid Section -->
+    <section class="product">
+        <h1 class="heading-title">The Ultimate <span>Sam's Dream Catalog</span></h1>
+        
+        <!-- Search Notice Banner Display Element -->
+        <div id="search-notice" style="display:none; background:#FFF0F2; color:#C58993; padding:15px; border-radius:8px; text-align:center; font-weight:bold; font-family:'Georgia', serif; margin: 20px auto; max-width:600px; border: 1px dashed #C58993;"></div>
+        
+        <!-- ================= CATEGORY 1: SKINCARE PREP ================= -->
+        <div class="category-wrapper" data-type="skincare">
+            <h2 class="category-heading" style="font-family: 'Georgia', serif; font-style: italic; color: #C58993; margin: 40px 0 20px 0; border-bottom: 2px dashed #FFF0F2; padding-bottom: 10px;">✨ Clean Skincare & Prep</h2>
+            <div class="product-container">
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">💦</div>
+                    <h3>Glazed Peptide Glow Serum</h3>
+                    <div class="price">Rs. 3,500</div>
+                    <div class="quantity">
+                        <span>Prep your skin canvas with a barrier-loving, plumping hydration layer.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🧴</div>
+                    <h3>Cloud Dew Gel Cream</h3>
+                    <div class="price">Rs. 2,900</div>
+                    <div class="quantity">
+                        <span>Ultra-lightweight oil-free moisturizer for an instant clean-girl aesthetic finish.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">☀️</div>
+                    <h3>Satin Blur Sun Milk SPF 50</h3>
+                    <div class="price">Rs. 1,850</div>
+                    <div class="quantity">
+                        <span>Zero white cast, completely invisible finish that acts as a gripping primer.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= CATEGORY 2: COMPLEXION BASE ================= -->
+        <div class="category-wrapper" data-type="makeup">
+            <h2 class="category-heading" style="font-family: 'Georgia', serif; font-style: italic; color: #C58993; margin: 60px 0 20px 0; border-bottom: 2px dashed #FFF0F2; padding-bottom: 10px;">🧴 Complexion Base</h2>
+            <div class="product-container">
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🌟</div>
+                    <h3>Seamless Filter Foundation</h3>
+                    <div class="price">Rs. 4,100</div>
+                    <div class="quantity">
+                        <span>Luminous breathable coverage that mimics your real skin with up to 16hr hold.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🪄</div>
+                    <h3>Brightening Cream Concealer</h3>
+                    <div class="price">Rs. 2,650</div>
+                    <div class="quantity">
+                        <span>Crease-proof formulas built to erase dark circles and spot-correct flawlessly.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🫶</div>
+                    <h3>Radiant Skin Tint Droplets</h3>
+                    <div class="price">Rs. 3,100</div>
+                    <div class="quantity">
+                        <span>Super sheer, dew-dripping tint for days when you just want a natural glow.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= CATEGORY 3: SETTING & BLUSH ================= -->
+        <div class="category-wrapper" data-type="makeup">
+            <h2 class="category-heading" style="font-family: 'Georgia', serif; font-style: italic; color: #C58993; margin: 60px 0 20px 0; border-bottom: 2px dashed #FFF0F2; padding-bottom: 10px;">🌸 Powders, Blush & Glows</h2>
+            <div class="product-container">
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">☁️</div>
+                    <h3>Pink Velvet Blur Powder</h3>
+                    <div class="price">Rs. 3,200</div>
+                    <div class="quantity">
+                        <span>Ultra-finely milled loose setting powder to bake and blur out under-eyes.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🌸</div>
+                    <h3>Velvet Blush Cloud</h3>
+                    <div class="price">Rs. 2,450</div>
+                    <div class="quantity">
+                        <span>Formulated with hydrating liquid pigments for a perfect pinch-pink flush.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">✨</div>
+                    <h3>Liquid Silk Highlighter</h3>
+                    <div class="price">Rs. 2,300</div>
+                    <div class="quantity">
+                        <span>Blends seamlessly over powder for a viral glass-like cheekbone reflection.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🍫</div>
+                    <h3>Sculpt & Define Cream Bronzer</h3>
+                    <div class="price">Rs. 2,750</div>
+                    <div class="quantity">
+                        <span>Sunkissed warmth that melts effortless into skin to give targeted definition.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= CATEGORY 4: EYES & BROWS ================= -->
+        <div class="category-wrapper" data-type="makeup">
+            <h2 class="category-heading" style="font-family: 'Georgia', serif; font-style: italic; color: #C58993; margin: 60px 0 20px 0; border-bottom: 2px dashed #FFF0F2; padding-bottom: 10px;">👁️ Defined Eyes & Brows</h2>
+            <div class="product-container">
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">👁️</div>
+                    <h3>Ethereal Nudes Shadow Palette</h3>
+                    <div class="price">Rs. 4,200</div>
+                    <div class="quantity">
+                        <span>A rich, deeply pigmented mix of shimmery diamond glitters and clean nudes.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">✒️</div>
+                    <h3>Precision Ink Liquid Liner</h3>
+                    <div class="price">Rs. 1,600</div>
+                    <div class="quantity">
+                        <span>Waterproof, hyper-pigmented sharp tip for the ultimate clean cat-eye wing.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🦅</div>
+                    <h3>Laminating Clear Brow Wax</h3>
+                    <div class="price">Rs. 1,950</div>
+                    <div class="quantity">
+                        <span>Extreme freeze hold to lock your brows into a fluffy, feathery finish all night.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= CATEGORY 5: LIPS ================= -->
+        <div class="category-wrapper" data-type="makeup">
+            <h2 class="category-heading" style="font-family: 'Georgia', serif; font-style: italic; color: #C58993; margin: 60px 0 20px 0; border-bottom: 2px dashed #FFF0F2; padding-bottom: 10px;">💄 Ultimate Lip Vault</h2>
+            <div class="product-container">
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">💄</div>
+                    <h3>Matte Silk Kiss Lipstick</h3>
+                    <div class="price">Rs. 1,890</div>
+                    <div class="quantity">
+                        <span>Nourishing satin-matte finish for comfortable, hydrating all-day wear.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🎀</div>
+                    <h3>Glass Dew Liquid Tint</h3>
+                    <div class="price">Rs. 2,200</div>
+                    <div class="quantity">
+                        <span>High-shine juicy lip oil gloss built for a super glossy plumping look.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">✏️</div>
+                    <h3>Velvet Sculpt Lip Liner</h3>
+                    <div class="price">Rs. 1,200</div>
+                    <div class="quantity">
+                        <span>Creamy, tug-free contour pencil to precisely define and shape your line.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">🍓</div>
+                    <h3>Overnight Berry Lip Mask</h3>
+                    <div class="price">Rs. 1,700</div>
+                    <div class="quantity">
+                        <span>Intense recovery balm that treats dry flakes so you wake up with plump lips.</span>
+                        <br><a href="#" class="button" onclick="alert('Added to your vanity bag!')">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Simple Footer Copyright Row -->
+    <footer>
+        <p align="center">© 2026 Sam's Vanity | Elevating Your Timeless Radiance</p> 
+    </footer>
+
+    <!-- Comprehensive Filter Processing Script Engine -->
+    <script>
+        function filterProducts(inputString) {
+            if(!inputString) return;
+            const keyword = inputString.toLowerCase().trim();
+            const categories = document.querySelectorAll('.category-wrapper');
+            const boxes = document.querySelectorAll('.box');
+            const noticeBox = document.getElementById('search-notice');
+            
+            let matchedBoxesCount = 0;
+            let identifiedType = "cosmetics";
+
+            // Determine broad category system filters
+            if(keyword === "makeup" || keyword === "lips" || keyword === "lipstick" || keyword === "blush") {
+                identifiedType = "✨ Makeup Collection Type";
+            } else if (keyword === "skincare" || keyword === "skin" || keyword === "cream" || keyword === "serum") {
+                identifiedType = "🧴 Skincare & Prep Type";
+            }
+
+            // Loop through every product element card item
+            boxes.forEach(box => {
+                const titleText = box.querySelector('h3').innerText.toLowerCase();
+                const descriptionText = box.querySelector('.quantity span').innerText.toLowerCase();
+                const parentCategory = box.closest('.category-wrapper').getAttribute('data-type');
+
+                // Match specific word item, broad classification word, or full type layout description
+                if(titleText.includes(keyword) || descriptionText.includes(keyword) || keyword === parentCategory || (keyword === "makeup" && parentCategory === "makeup")) {
+                    box.style.display = "block";
+                    box.style.border = "2px solid #C58993"; 
+                    matchedBoxesCount++;
+                } else {
+                    box.style.display = "none";
+                }
+            });
+
+            // Adjust category headers based on item visibility
+            categories.forEach(cat => {
+                const visibleInside = cat.querySelectorAll('.box[style*="display: block"]').length;
+                const headingElement = cat.querySelector('.category-heading');
+                if(headingElement) {
+                    headingElement.style.display = (visibleInside > 0 || keyword === "") ? "block" : "none";
+                }
+            });
+
+            // Show matching message to user
+            if(matchedBoxesCount > 0) {
+                noticeBox.style.display = "block";
+                noticeBox.innerHTML = `Showing matches for "${inputString}" under ${identifiedType}! (${matchedBoxesCount} items found)`;
+            } else {
+                noticeBox.style.display = "block";
+                noticeBox.innerHTML = `No exact match for "${inputString}". Showing all products instead!`;
+                // Reset view if nothing matches
+                boxes.forEach(b => { b.style.display = "block"; b.style.border="none"; });
+                categories.forEach(c => { const h = c.querySelector('.category-heading'); if(h) h.style.display="block"; });
+            }
+        }
+
+        // On-load URL parameters intercept handler logic
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('search');
+            if (query) {
+                document.getElementById('search-box').value = query;
+                filterProducts(query);
+            }
+        });
+    </script>
+</body>
+</html>
